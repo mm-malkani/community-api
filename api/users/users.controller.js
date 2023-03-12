@@ -725,6 +725,9 @@ const getUserFeed = async (req, res) =>
                     },
                     {
                         $skip: 10 * req.params.page
+                    },
+                    {
+                        $limit : 10
                     }
 
                 ]).toArray()
@@ -767,6 +770,9 @@ const getUserFeed = async (req, res) =>
                     },
                     {
                         $skip: 10 * req.params.page
+                    },
+                    {
+                        $limit : 10
                     }
 
                 ]).toArray()
