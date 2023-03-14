@@ -1,6 +1,7 @@
 import mongo from '../utils/mongoUtil.js'
 import amqp from  'amqplib/callback_api.js'
 import * as constants from '../constants/constants.js'
+import nodeMailer from 'nodemailer'
 
 amqp.connect(constants.mqConnectionUrl, function(err, conn)
 {

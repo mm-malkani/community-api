@@ -208,7 +208,7 @@ const getUser = async (req, res) =>
 
             }).toArray()
 
-    getUserResponse[0].email = getUserResponse[0].email.replace(/^(.)(.*)(.@.*)$/, (_, a, b, c) => a + b.replace(/./g, '*') + c) // Masking the email
+    getUserResponse[0].userEmail = getUserResponse[0].userEmail4.replace(/^(.)(.*)(.@.*)$/, (_, a, b, c) => a + b.replace(/./g, '*') + c) // Masking the email
 
     res.status(200).send(getUserResponse)
 }
